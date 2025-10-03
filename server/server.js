@@ -29,7 +29,7 @@ app.use('/api', limiter);
 app.use(compression());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3000'],
+  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3010'],
   credentials: true
 }));
 
